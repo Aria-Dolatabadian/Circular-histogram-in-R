@@ -26,7 +26,7 @@ circos.track(ylim = c(0.5, length(percent)+0.5), track.height = 0.8,
 #or
 
 # Define your gene names and corresponding percentages
-genes = c("Gene1", "Gene2", "Gene3", "Gene4", "Gene5", "Gene6", "Gene7", "Gene8", "Gene9", "Gene10", "Gene11", "Gene12", "Gene13")
+genes = c("CN", "RNL", "RN", "NL", "CNL", "TN", "TX", "OTHER", "RPW8", "RLP", "TNL", "TM-CC", "RLK")
 percent = sort(c(50.30, 16.35, 8.11, 9.53, 0.79, 1.35, 4.24, 2.39, 2.52, 2.02, 0.49, 0.49, 1.35))
 color = rev(rainbow(length(percent)))
 
@@ -48,4 +48,5 @@ circos.track(ylim = c(0.5, length(percent) + 0.5), track.height = 0.8,
         circos.axis(h = "top", major.at = breaks, labels = paste0(breaks, "%"), 
             labels.cex = 0.6)
 })
+
 
